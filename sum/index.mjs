@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * 数値の配列を受け取って、その要素の合計を返す関数
  */
@@ -11,4 +9,12 @@ function add(numbers) {
   return result;
 }
 
-module.exports = { add };
+function multi(numArr) {
+  let result = 1;
+  for (const num of numArr) {
+    result *= num;
+  }
+  return result;
+}
+
+export { add, multi };
